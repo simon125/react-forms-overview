@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 
-import Button from './components/Button';
-
-
-const Container = styled.div`
-background: red;
-height: 100px;
-width: 200px;
-`
+import PasswordResetFrom from './components/PasswordResetForm';
 
 
 
@@ -17,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Button />
+        <PasswordResetFrom />
       </div>
     );
   }
