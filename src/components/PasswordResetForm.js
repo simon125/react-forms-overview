@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Formik } from 'formik';
-
 import FormContainer from '../hoc/FormContainer';
 import { SubmitButton, FormInput, Label, Title, LinkButton } from '../helpers/theme';
 
@@ -19,7 +18,6 @@ const PasswordResetForm = () => {
                 onSubmit={values => {
                     setFormState({ ...values });
                 }
-
                 }
                 render={({
                     values,

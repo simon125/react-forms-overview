@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const AppContainer = styled.div`
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+`;
+
 
 export const SubmitButton = styled.button`
     background: #f50057;
@@ -25,6 +32,7 @@ export const FormInput = styled.input`
     padding-left: 10px;
     &::-webkit-input-placeholder {
         color: #999;
+        text-transform: uppercase;
     }
 `;
 
@@ -55,4 +63,8 @@ export const LinkButton = styled.button`
     &:hover {
         text-decoration: underline;
     }
-`
+`;
+export const Checkbox = styled.input`
+    margin-right: 5px;
+    transform: scale(1.15);
+`;

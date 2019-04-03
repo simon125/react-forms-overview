@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
+import { AppContainer } from './helpers/theme';
+
 import PasswordResetFrom from './components/PasswordResetForm';
+import RegisterForm from './components/RegisterForm';
 
 
 
@@ -8,9 +11,10 @@ import PasswordResetFrom from './components/PasswordResetForm';
 class App extends Component {
   render() {
     return (
-      <div>
+      <AppContainer>
         <PasswordResetFrom />
-      </div>
+        <RegisterForm />
+      </AppContainer>
     );
   }
 }
