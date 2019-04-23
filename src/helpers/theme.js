@@ -21,6 +21,10 @@ export const SubmitButton = styled.button`
     cursor: pointer;
     text-transform: uppercase;
     margin-bottom: 40px;
+    transition: background .15s;
+    &:hover {
+        filter: brightness(120%);
+    }
 `;
 export const FormInput = styled.input`
     margin-bottom: 40px;
@@ -72,4 +76,29 @@ export const Checkbox = styled.input`
 export const SpacingContainer = styled.div`
     display: flex;
     justify-content: space-between;
+`;
+export const Container = styled.div`
+    margin: 5px;
+    background: #322832;
+    width: min-content;
+    padding: 25px;
+    -webkit-box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
+    box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
+    height: fit-content;
 `
+export const SubscribeContainer = styled.div`
+    margin: 50px 15px 15px 15px;
+    background: #322832;
+    width: 940px;
+    padding: 25px;
+    -webkit-box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
+    box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
+ `;
+export const FormInputLarge = styled(FormInput)`
+  height: 59px;
+`;
+export const SubmitButtonLarge = styled(SubmitButton)`
+    height: 59px;
+`;
