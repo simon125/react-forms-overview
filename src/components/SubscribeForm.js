@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Formik } from 'formik';
-import { SubmitButton, FormInput, Title, SpacingContainer, FormInputLarge, SubmitButtonLarge, SubscribeContainer } from '../helpers/theme';
+import { Title, SpacingContainer, FormInputLarge, SubmitButtonLarge, SubscribeContainer } from '../helpers/theme';
 
 
 

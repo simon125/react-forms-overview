@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
 export const AppContainer = styled.div`
-    padding: 50px;
+    padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+      @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 
@@ -25,6 +29,13 @@ export const SubmitButton = styled.button`
     &:hover {
         filter: brightness(120%);
     }
+    @media (max-width: 500px) {
+        min-width: 90%;
+        margin: 0 auto 10px auto;
+        height: 30px;
+        font-size: 10px;
+    }
+
 `;
 export const FormInput = styled.input`
     margin-bottom: 40px;
@@ -38,12 +49,22 @@ export const FormInput = styled.input`
         color: #999;
         text-transform: uppercase;
     }
+      @media (max-width: 500px) {
+        width: 90%;
+        margin: 0 auto 20px auto;
+        height: 30px;
+        font-size: 10px;       
+    }
 `;
 
 export const Label = styled.label`
     display: block;
     text-transform: uppercase;
     margin-bottom: 25px;
+    @media (max-width: 500px) {
+        margin-bottom: 10px;
+        font-size: 11px;
+    }
 `;
 
 export const Title = styled.h2`
@@ -55,6 +76,10 @@ export const Title = styled.h2`
     color: rgba(255, 255, 255, 255);
     text-align: center;  
     text-transform: uppercase;
+    @media (max-width: 500px) {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
 `;
 export const LinkButton = styled.button`
     background: transparent;
@@ -67,6 +92,10 @@ export const LinkButton = styled.button`
     &:hover {
         text-decoration: underline;
     }
+    @media (max-width: 500px) {
+        margin-bottom: 8px;
+        font-size: 10px;
+    }
 `;
 export const Checkbox = styled.input`
     margin-right: 5px;
@@ -76,6 +105,9 @@ export const Checkbox = styled.input`
 export const SpacingContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1100px) {
+        flex-direction: column;
+    }
 `;
 export const Container = styled.div`
     margin: 5px;
@@ -86,15 +118,22 @@ export const Container = styled.div`
     -moz-box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
     box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
     height: fit-content;
+        @media (max-width: 500px) {
+        width: 90vw;
+    }
 `
 export const SubscribeContainer = styled.div`
-    margin: 50px 15px 15px 15px;
+    margin: 50px 5px 5px 5px;
     background: #322832;
     width: 940px;
     padding: 25px;
     -webkit-box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
     box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
+    @media (max-width: 1100px) {
+        width: min-content;
+        margin: 5px;
+    }
  `;
 export const FormInputLarge = styled(FormInput)`
   height: 59px;
