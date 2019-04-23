@@ -60,7 +60,7 @@ const RegisterForm = () => {
                         )
                 } />
             <Checkbox type="checkbox" name="termsOfService" id="termsOfService" />
-            I agree to the&nbsp;
+            <label htmlFor="termsOfService"> I agree to the</label>&nbsp;
             <LinkButton
                 type="button">Terms of Service</LinkButton>
         </React.Fragment>

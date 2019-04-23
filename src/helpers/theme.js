@@ -68,3 +68,8 @@ export const Checkbox = styled.input`
     margin-right: 5px;
     transform: scale(1.15);
 `;
+
+export const SpacingContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+`
