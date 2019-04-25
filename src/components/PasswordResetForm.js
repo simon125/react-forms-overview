@@ -20,9 +20,10 @@ const PasswordResetForm = () => {
                 }}
                 validate={values => {
                     const errors = {};
-                    if(values.email.trim() === ''){
+                    if (values.email.trim() === '') {
                         errors.content = 'Required!'
                     }
+                    return errors;
                 }}
                 render={({
                     values,
