@@ -5,8 +5,15 @@ export const AppContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-      @media (max-width: 500px) {
+    align-items: flex-center;
+     @media (max-width: 1520px) {
         flex-direction: column;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 
+    }
+      @media (max-width: 500px) {
+        
         align-items: center;
     }
 `;
@@ -110,6 +117,7 @@ export const SpacingContainer = styled.div`
     }
 `;
 export const Container = styled.div`
+    display: inline-block;
     margin: 5px;
     background: #322832;
     width: min-content;
@@ -123,9 +131,11 @@ export const Container = styled.div`
     }
 `
 export const SubscribeContainer = styled.div`
+    display: inline-block;      
     margin: 50px 5px 5px 5px;
     background: #322832;
     width: 940px;
+    height: fit-content;
     padding: 25px;
     -webkit-box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 15px 20px 52px -4px rgba(0,0,0,0.75);

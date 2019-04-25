@@ -17,8 +17,13 @@ const PasswordResetForm = () => {
                 initialValues={formState}
                 onSubmit={values => {
                     setFormState({ ...values });
-                }
-                }
+                }}
+                validate={values => {
+                    const errors = {};
+                    if(values.email.trim() === ''){
+                        errors.content = 'Required!'
+                    }
+                }}
                 render={({
                     values,
                     errors,
