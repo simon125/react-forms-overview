@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Formik } from 'formik';
 import FormContainer from '../hoc/FormContainer';
-import { SubmitButton, FormInput, Label, Title, LinkButton, Checkbox, SpacingContainer } from '../helpers/theme';
+import { SubmitButton, FormInput, Label, Title, LinkButton, Checkbox, SpacingContainer, CheckboxLabel } from '../helpers/theme';
 
 
 const LoginForm = () => {
@@ -55,7 +55,7 @@ const LoginForm = () => {
                             <SpacingContainer>
                                 <span>
                                     <Checkbox type="checkbox" name="rememberMe" id="rememberMe" value={values.rememberMe} />
-                                    <label htmlFor="rememberMe"> Remember Me</label>
+                                    <CheckboxLabel htmlFor="rememberMe"> Remember Me</CheckboxLabel>
                                 </span>
                                 <LinkButton type="button">
                                     Forgot Password?

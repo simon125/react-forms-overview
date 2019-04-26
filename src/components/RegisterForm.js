@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Formik } from 'formik';
 import FormContainer from '../hoc/FormContainer';
-import { SubmitButton, FormInput, Label, Title, LinkButton, Checkbox } from '../helpers/theme';
+import { SubmitButton, FormInput, Label, Title, LinkButton, Checkbox, CheckboxLabel } from '../helpers/theme';
 
 
 const RegisterForm = () => {
@@ -60,7 +60,7 @@ const RegisterForm = () => {
                         )
                 } />
             <Checkbox type="checkbox" name="termsOfService" id="termsOfService" />
-            <label htmlFor="termsOfService"> I agree to the</label>&nbsp;
+            <CheckboxLabel htmlFor="termsOfService"> I agree to the</CheckboxLabel>&nbsp;
             <LinkButton
                 type="button">Terms of Service</LinkButton>
         </React.Fragment>
