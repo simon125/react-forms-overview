@@ -131,7 +131,7 @@ export const Container = styled.div`
         }
     }
     @media (max-width: 500px) {
-        width: 90vw;
+        width: 100%;
     }
 `
 export const SubscribeContainer = styled.div`
